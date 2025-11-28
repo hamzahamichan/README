@@ -1,3 +1,19 @@
 spring:
   application:
     name: Le_Grand_Bazar
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Le_GrandBazar # Nom de ta DB PostgreSQL
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 1234hamza
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop    # create / create-drop / update / none
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8080
+
